@@ -1,0 +1,33 @@
+Question 1: Write a function that takes a string and returns its length.
+Answer:
+function getStringLength(str) {
+    return str.length;
+}
+// For Example:
+console.log(getStringLength("Hello, World!")); // Output: 13
+console.log(getStringLength("JavaScript"));    // Output: 10
+console.log(getStringLength(""));              // Output: 0
+
+Question 2: Write a function that reverses a string without using the built-in reverse() method.
+Answer:
+function reverseString(str) {
+    let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return reversed;
+}
+// For Example:
+console.log(reverseString("hello")); // Output: "olleh"
+
+Question 3: Write a program that prints numbers from 1 to 100. For multiples of 3, print "Fizz", for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz".
+Answer:
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)

@@ -1,0 +1,37 @@
+Comparisons
+In This page I Understand comparison operators in JavaScript, which are used to compare values and return true or false.
+
+1. Basic Comparison Operators
+OperatorMeaningExampleResult>Greater than5 > 3true<Less than5 < 3false>=Greater than or equal5 >= 5true<=Less than or equal3 <= 5true==Loose equality (compares values)"5" == 5true===Strict equality (compares values & types)"5" === 5false!=Loose inequality"5" != 5false!==Strict inequality"5" !== 5true
+2. Strict (===) vs. Loose (==) Comparison
+* == (Loose equality): Converts types before comparing.
+javascript
+CopyEdit
+console.log(0 == false);  // true (0 is converted to false)
+console.log("" == false); // true ("" is converted to false)
+* === (Strict equality): Compares both value and type.
+javascript
+CopyEdit
+console.log(0 === false);  // false (0 is a number, false is a boolean)
+console.log("5" === 5);    // false (string vs. number)
+ Always prefer === for accurate comparisons to avoid unexpected results.
+
+3. Comparison with null and undefined
+* null == undefined true (they are loosely equal)
+* null === undefined false (strict comparison checks type)
+* null > 0  false
+* null == 0  false
+* null >= 0 true (because null is converted to 0)
+ Avoid comparing null or undefined directly, as results can be confusing.
+
+4. Comparisons and Type Conversion
+* JavaScript automatically converts values in comparisons.
+javascript
+CopyEdit
+console.log("10" > 5);   // true ("10" is converted to number 10)
+console.log("apple" > "banana"); // false (compares letters by Unicode)
+
+Insights
+* Use === instead of == to avoid unexpected conversions.
+* Be cautious when comparing null and undefined, as results can be tricky.
+* Strings are compared letter by letter based on Unicode values.

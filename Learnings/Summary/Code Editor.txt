@@ -1,0 +1,21 @@
+Code Editor
+
+This page explains code editors for writing JavaScript.
+
+1. What is a Code Editor?
+* A code editor is a tool where you write and edit JavaScript code.
+* There are two types: simple editors (like Notepad) and advanced editors (like VS Code).
+2. Choosing a Code Editor
+* Beginner-friendly: VS Code (Visual Studio Code) is the most popular choice.
+* Other options: Atom, Sublime Text, WebStorm (for advanced users).
+3. Key Features of a Good Editor
+* Syntax highlighting – Colours different parts of code for readability.
+* Autocomplete – Suggests code as you type.
+* Debugging tools – Helps find and fix errors.
+* Extensions – Adds extra features for JavaScript development.
+4. Browser Console for Quick Testing
+* You can also run JavaScript in the browser’s Developer Console (F12  Console tab).
+* Useful for quick testing but not for full projects.
+Insight
+Use VS Code for JavaScript development, as it offers useful features like syntax highlighting, debugging, and extensions. The browser console is handy for small tests.
+

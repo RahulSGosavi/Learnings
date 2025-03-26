@@ -1,0 +1,31 @@
+Hello World!
+This page explains how to write and run your first JavaScript program.
+Writing “Hello, World!” in JavaScript
+* The simplest JavaScript program prints "Hello, World!" to the screen.
+* Example:
+javascript
+CopyEdit
+alert("Hello, World!");
+o This shows a pop-up message in the browser.
+2. How to Run JavaScript?
+* Inside an HTML file: JavaScript can be written inside a <script> tag.
+html
+CopyEdit
+<script>
+  alert("Hello, World!");
+</script>
+* In the Browser Console:
+o Open DevTools (F12  Console tab) and type:
+* javascript
+* CopyEdit
+* console.log("Hello, World!");
+o This prints the message in the console.
+3. External JavaScript File
+* JavaScript can be written in a separate file (script.js) and linked in HTML:
+html
+CopyEdit
+<script src="script.js"></script>
+* This keeps HTML clean and reusable.
+Main Points
+The easiest way to start JavaScript is using alert() or console.log(). You can write JavaScript inside <script> tags in HTML or in an external file (.js).
+

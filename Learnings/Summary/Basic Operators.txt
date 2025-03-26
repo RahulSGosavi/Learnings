@@ -1,0 +1,80 @@
+Basic Operators ‘Math’
+In This Page I Understand operators in JavaScript, which are symbols used for calculations, comparisons, and logic.
+
+1. Arithmetic Operators
+Used for math operations:
+javascript
+CopyEdit
+let x = 10, y = 5;
+
+console.log(x + y); // 15 (Addition)
+console.log(x - y); // 5  (Subtraction)
+console.log(x * y); // 50 (Multiplication)
+console.log(x / y); // 2  (Division)
+console.log(x % y); // 0  (Remainder)
+console.log(x ** y); // 100000 (Exponentiation, 10^5)
+
+2. Assignment Operators
+Assign values to variables:
+javascript
+CopyEdit
+let a = 5;
+a += 2;  // Same as a = a + 2
+console.log(a); // 7
+
+3. Comparison Operators
+Compare values and return true or false:
+javascript
+CopyEdit
+console.log(5 > 3);  // true (greater than)
+console.log(5 < 3);  // false (less than)
+console.log(5 >= 5); // true (greater than or equal to)
+console.log(5 == "5"); // true (loose equality, only compares value)
+console.log(5 === "5"); // false (strict equality, checks type too)
+console.log(5 != "5"); // false (not equal)
+console.log(5 !== "5"); // true (strict not equal)
+Use === (strict equality) instead of == to avoid type conversion issues.
+
+4. Logical Operators
+Used for conditions:
+javascript
+CopyEdit
+console.log(true && false); // false (AND - both must be true)
+console.log(true || false); // true (OR - at least one must be true)
+console.log(!true); // false (NOT - reverses value)
+
+5. String Concatenation (+)
+* When used with strings, + joins them:
+javascript
+CopyEdit
+console.log("Hello " + "World"); // "Hello World"
+* If a number is added to a string, it converts the number to a string:
+javascript
+CopyEdit
+console.log("5" + 3); // "53"
+
+6. Increment & Decrement Operators
+Increase or decrease a number by 1:
+javascript
+CopyEdit
+let count = 10;
+count++; // Increments by 1
+console.log(count); // 11
+
+count--; // Decrements by 1
+console.log(count); // 10
+
+7. Ternary Operator (? :)
+A short way to write if...else:
+javascript
+CopyEdit
+let age = 18;
+let status = age >= 18 ? "Adult" : "Minor";
+console.log(status); // "Adult"
+
+Key Insights
+* Use === for strict comparisons to avoid unexpected results.
+* + joins strings, but -, *, and / treat values as numbers.
+* Logical operators (&&, ||, !) are used for conditions.
+* Ternary operator (? :) is a short way to write conditional statements.
+

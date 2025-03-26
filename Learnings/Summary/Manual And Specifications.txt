@@ -1,0 +1,23 @@
+Manual And Specifications
+This page explains the manuals and specifications for JavaScript.
+1. Specifications
+* JavaScript follows a formal standard called ECMAScript (ECMA-262).
+* TC39, a group of experts, maintains and updates this standard.
+* New features are added through proposals, reviewed in stages before approval.
+2. Where to Find JavaScript Specifications?
+* ECMAScript Specification: 
+The official, detailed document defining JavaScript rules.
+* MDN (Mozilla Developer Network):
+ A beginner-friendly, practical guide for using JavaScript.
+* TC39 Proposals: 
+A list of upcoming JavaScript features being considered.
+3. Why Are Specifications Important?
+* Browsers (like Chrome, Firefox) follow ECMAScript to ensure JavaScript works the same way everywhere.
+* Developers use specifications to understand how JavaScript works under the hood.
+Alternative to Specifications
+* Instead of reading complex technical specs, use MDN Web Docs, which explain JavaScript in a simpler way.
+Core Insights
+JavaScript is defined by ECMAScript, and updates are managed by TC39. While specs are technical, MDN provides an easy-to-understand guide for learning and using JavaScript.
+
+
+

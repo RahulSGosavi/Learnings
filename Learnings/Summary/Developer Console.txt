@@ -1,0 +1,21 @@
+Developer Console
+This page explains Developer Tools (DevTools) in browsers, which help debug and analyze JavaScript code.
+1. What are Developer Tools?
+* Built-in tools in browsers like Chrome, Firefox, and Edge.
+* Help developers inspect, debug, and optimize websites.
+2. How to Open DevTools?
+* Press F12 or Ctrl + Shift + I (Windows) / Cmd + Opt + I (Mac).
+* Right-click on a webpage Click Inspect.
+3. Important DevTools Features
+* Elements Tab – View and edit HTML & CSS in real time.
+* Console Tab – Run JavaScript commands and debug errors.
+* Sources Tab – View and edit JavaScript files, set breakpoints for debugging.
+* Network Tab – Analyze requests, check loading speed, and fix slow pages.
+* Performance Tab – Optimize website speed and performance.
+4. Why Use DevTools?
+* Helps find and fix JavaScript errors.
+* Allows testing and modifying web pages live.
+* Useful for analyzing website performance and debugging network requests.
+Insights
+DevTools are essential for debugging and optimizing JavaScript. The Console is great for quick tests, while Elements and Network help analyze and improve web pages.
+

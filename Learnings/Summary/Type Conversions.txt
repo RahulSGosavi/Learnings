@@ -1,0 +1,46 @@
+Type Conversions
+In This page I Understand type conversions in JavaScript, which means changing values from one type to another (like converting a number to a string). 
+1. Types of Conversions
+JavaScript automatically or manually converts values between strings, numbers, and booleans.
+A. String Conversion
+* Converts any value into a string.
+* Done using String(value) or automatic conversion.
+Example:
+Javascript
+CopyEdit
+let num = 123;
+console.log(String(num)); // "123"
+B. Number Conversion
+* Converts values into numbers using Number(value).
+Example:
+javascript
+CopyEdit
+console.log(Number("123"));  // 123 (valid number)
+console.log(Number("abc"));  // NaN (Not a Number)
+* Special cases:
+* null = 0
+* true = 1, false = 0
+* " 456 "  456 (spaces are ignored)
+C. Boolean Conversion
+* Converts values into true or false using Boolean(value).
+* Example:
+javascript
+CopyEdit
+console.log(Boolean(1));       // true
+console.log(Boolean(0));       // false
+console.log(Boolean("hello")); // true
+console.log(Boolean(""));      // false
+* Falsy values (converted to false): 0, "" (empty string), null, undefined, NaN.
+* Everything else is truthy (true).
+2. Automatic (Implicit) Type Conversion
+* JavaScript sometimes converts types automatically:
+javascript
+CopyEdit
+console.log("5" - 2);   // 3 (string "5" converted to number)
+console.log("5" + 2);   // "52" (number 2 converted to string)
+* Plus operator prefers string concatenation, while -, *, / prefer numbers.
+Main Points
+* Use String(), Number(), and Boolean() for manual conversions.
+* Be aware of automatic conversions, especially with + and - operators.
+* Empty values like 0, "", null, and NaN are falsy, while everything else is truthy.
+
