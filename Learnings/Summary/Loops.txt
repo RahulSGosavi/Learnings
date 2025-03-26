@@ -1,0 +1,67 @@
+Loops: while And For
+
+In This page I understand loops in JavaScript, which allow repeating actions multiple times.
+
+1. The while Loop
+Repeats a block of code as long as a condition is true.
+javascript
+CopyEdit
+let i = 0;
+while (i < 5) {  
+  console.log(i);  
+  i++;  // Increase i to avoid infinite loop
+}
+Use while when the number of iterations is unknown in advance.
+
+2. The do...while Loop
+Runs at least once, then continues if the condition is true.
+javascript
+CopyEdit
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+ Use do...while when you need to execute the block at least once.
+
+3. The for Loop
+A compact loop with an initialization, condition, and update in one line.
+javascript
+CopyEdit
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+ Use for when you know how many times the loop should run.
+
+4. Breaking a Loop (break)
+Stops a loop immediately when a condition is met.
+javascript
+CopyEdit
+for (let i = 0; i < 10; i++) {
+  if (i === 5) break;  // Stop when i is 5
+  console.log(i);
+}
+
+5. Skipping Iterations (continue)
+Skips the current iteration and moves to the next one.
+javascript
+CopyEdit
+for (let i = 0; i < 5; i++) {
+  if (i === 2) continue; // Skip 2
+  console.log(i);
+}
+
+6. Infinite Loops (Avoid These!)
+A loop without an exit condition will run forever and crash the program.
+javascript
+CopyEdit
+while (true) {
+  console.log("This will never stop!"); // Avoid infinite loops
+}
+
+Key Insights
+* Use while when the number of iterations is unknown.
+* Use for when the loop count is predefined.
+* Use break to stop a loop early.
+* Use continue to skip certain iterations.
+* Be careful of infinite loops, as they can freeze your program.

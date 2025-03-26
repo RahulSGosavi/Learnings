@@ -1,0 +1,66 @@
+Strict Mode
+In This page I Understand "strict mode" in JavaScript, which helps write safer and more reliable code. Here’s a simple summary:
+
+1. What is "Strict Mode"?
+* "use strict" is a special directive that enforces stricter rules in JavaScript.
+* It helps catch errors early and prevents bad coding practices.
+
+2. How to Enable Strict Mode?
+* Add "use strict"; at the beginning of a script or function.
+javascript
+CopyEdit
+"use strict";
+
+let x = 5; // Works fine
+y = 10; // Error! (Variables must be declared)
+ Without strict mode, JavaScript creates y as a global variable automatically, which is bad practice.
+* Strict mode can also be enabled inside a function instead of the whole script:
+javascript
+CopyEdit
+function myFunction() {
+  "use strict";
+  let a = 10;
+  b = 20; // Error! b is not declared
+}
+
+3. What Changes in Strict Mode?
+1. Prevents Using Undeclared Variables
+javascript
+CopyEdit
+"use strict";
+x = 5; // Error: x is not declared
+2. Catches Mistyped Variable Names
+javascript
+CopyEdit
+"use strict";
+let message = "Hello";
+console.log(mesage); // Error (typo in "message")
+Without strict mode, JavaScript ignores such typos and creates a new global variable.
+3. Stops Deleting Important Features
+javascript
+CopyEdit
+"use strict";
+delete Object.prototype; // Error! Cannot delete built-in objects
+4. Prevents Duplicating Function Parameters
+javascript
+CopyEdit
+"use strict";
+function sum(a, a) {  // Error! Duplicate parameter name
+  return a + a;
+}
+5. Blocks this from Being undefined
+javascript
+CopyEdit
+"use strict";
+console.log(this); // In a function, `this` will be `undefined` instead of the global object
+ Without strict mode, this would refer to window in browsers.
+
+4. When to Use Strict Mode?
+Always enable strict mode in modern JavaScript to avoid hidden bugs and write cleaner code.
+It is automatically enabled inside ES6 modules (import/export).
+
+Key Insights
+* "use strict"; makes JavaScript stricter and safer by catching errors.
+* It prevents undeclared variables, typos, and unsafe practices.
+* Strict mode helps write better, bug-free code and should be used in every project.
+

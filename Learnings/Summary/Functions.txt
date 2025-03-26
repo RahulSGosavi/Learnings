@@ -1,0 +1,76 @@
+Functions
+In This page I Understand the basics of functions in JavaScript, which are blocks of reusable code.
+
+1. What is a Function?
+A function is a piece of code that runs only when called. It helps avoid repeating the same code multiple times.
+Example:
+javascript
+CopyEdit
+function sayHello() {
+  console.log("Hello, World!");
+}
+sayHello(); // Calls the function and prints "Hello, World!"
+
+2. Function Parameters and Arguments
+Functions can take parameters (inputs) to make them more flexible.
+Example:
+javascript
+CopyEdit
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+greet("Rahul"); // Output: "Hello, Rahul!"
+greet("Sanjay"); // Output: "Hello, Sanjay!"
+Here, "Rahul" and "Sanjay" are arguments passed to the function.
+
+3. Returning a Value
+A function can return a result instead of printing it.
+Example:
+javascript
+CopyEdit
+function add(a, b) {
+  return a + b;
+}
+let sum = add(3, 5);  
+console.log(sum); // Output: 8
+The return statement sends a value back to where the function was called.
+
+4. Function Declaration vs. Function Expression
+* Function Declaration (can be called before its definition):
+javascript
+CopyEdit
+function sayHi() {
+  console.log("Hi!");
+}
+* Function Expression (stored in a variable, must be defined before use):
+javascript
+CopyEdit
+let sayHi = function() {
+  console.log("Hi!");
+};
+
+5. Default Parameters
+If no argument is provided, JavaScript can use a default value.
+Example:
+javascript
+CopyEdit
+function greet(name = "Guest") {
+  console.log("Hello, " + name + "!");
+}
+greet(); // Output: "Hello, Guest!"
+ If no argument is passed, "Guest" is used as the default.
+
+6. Functions with Multiple Parameters
+javascript
+CopyEdit
+function multiply(a, b) {
+  return a * b;
+}
+console.log(multiply(4, 5)); // Output: 20
+
+Key Takeaways
+Functions make code reusable and easy to manage.
+Use parameters to make functions more flexible.
+Use return to send back a result.
+ Function declarations can be called before they are defined, but function expressions cannot.
+
