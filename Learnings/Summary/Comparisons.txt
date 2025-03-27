@@ -2,7 +2,58 @@ Comparisons
 In This page I Understand comparison operators in JavaScript, which are used to compare values and return true or false.
 
 1. Basic Comparison Operators
-OperatorMeaningExampleResult>Greater than5 > 3true<Less than5 < 3false>=Greater than or equal5 >= 5true<=Less than or equal3 <= 5true==Loose equality (compares values)"5" == 5true===Strict equality (compares values & types)"5" === 5false!=Loose inequality"5" != 5false!==Strict inequality"5" !== 5true
+Operator
+Meaning
+Example
+Result
+
+>
+Greater than
+5 > 3
+true
+
+
+<
+Less than
+5 < 3
+false
+
+
+>=
+Greater than or equal
+5 >= 5
+true
+
+
+<=
+Less than or equal
+3 <= 5
+true
+
+
+==
+Loose equality (compares values)
+"5" == 5
+true
+
+
+===
+Strict equality (compares values & types)
+"5" === 5
+false
+
+
+!=
+Loose inequality
+"5" != 5
+false
+
+
+!==
+Strict inequality
+"5" !== 5
+true
+
 2. Strict (===) vs. Loose (==) Comparison
 * == (Loose equality): Converts types before comparing.
 javascript
