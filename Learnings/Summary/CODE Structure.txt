@@ -1,8 +1,10 @@
 CODE Structure
 In this page I understand the basic structure of a JavaScript program and best practices for writing clean, readable code.
+
 1. Writing JavaScript Code
 * JavaScript is written as a series of statements.
-* Each statement ends with a semicolon ( ; ), but it’s optional in most cases.
+* Each statement ends with a semicolon ( ; ), but itâ€™s optional in most cases.
+
 2. Code Blocks
 * A block is a group of statements inside curly braces {}.
 * Example:
@@ -13,6 +15,7 @@ CopyEdit
   console.log(a); 
 }
 * Blocks are used in functions, loops, and conditional statements.
+
 3. Indentation and Readability
 * Proper indentation and spacing make code easier to read.
 * Example of well-structured code:
@@ -22,6 +25,7 @@ if (true) {
   console.log("Hello, World!");
 }
 * Using new lines and spaces improves readability.
+
 4. Comments in JavaScript
 * Single-line comment: // This is a comment
 * Multi-line comment:
@@ -32,6 +36,8 @@ CopyEdit
   It helps explain complex code.
 */
 * Comments help describe the purpose of the code but should not be overused.
+
+
 Key Insights
 JavaScript code is made up of statements, organized using blocks {}, and should be properly formatted with comments for clarity.
 
