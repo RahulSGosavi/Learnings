@@ -4,18 +4,28 @@ I have here cover what I learn from website in details.
 What is JavaScript?
 * JavaScript is a programming language used to make websites interactive.
 * It works in web browsers and allows dynamic content like animations, pop-ups, and form validation.
+
+
 What Can JavaScript Do?
 * It can change webpage content dynamically.
 * It reacts to user actions (like clicks or typing).
 * It can communicate with servers to update data without reloading the page (like in online chat apps).
+
+
 What JavaScript Cannot Do Alone
-* It can’t directly access files on your computer.
-* It doesn’t have built-in networking (like direct database access).
+* It canâ€™t directly access files on your computer.
+* It doesnâ€™t have built-in networking (like direct database access).
+
+
 How JavaScript Runs in the Browser
 * The browser has a built-in JavaScript engine that executes the code.
 * JavaScript is embedded inside HTML pages and runs when loaded in a browser.
+
+
 Versions and Compatibility
 * JavaScript is constantly evolving with new features, but older versions still work.
 * Modern browsers support updated JavaScript versions for better performance and security.
+
 Insights
-JavaScript is essential for web development, making websites dynamic and user-friendly. It works in browsers and interacts with HTML and CSS to create rich web experiences.
+JavaScript is essential for web development, making websites dynamic and user-friendly. 
+It works in browsers and interacts with HTML and CSS to create rich web experiences.
