@@ -1,5 +1,5 @@
 Strict Mode
-In This page I Understand "strict mode" in JavaScript, which helps write safer and more reliable code. Here’s a simple summary:
+In This page I Understand "strict mode" in JavaScript, which helps write safer and more reliable code. Hereâ€™s a simple summary:
 
 1. What is "Strict Mode"?
 * "use strict" is a special directive that enforces stricter rules in JavaScript.
@@ -29,6 +29,7 @@ javascript
 CopyEdit
 "use strict";
 x = 5; // Error: x is not declared
+
 2. Catches Mistyped Variable Names
 javascript
 CopyEdit
@@ -36,11 +37,13 @@ CopyEdit
 let message = "Hello";
 console.log(mesage); // Error (typo in "message")
 Without strict mode, JavaScript ignores such typos and creates a new global variable.
+
 3. Stops Deleting Important Features
 javascript
 CopyEdit
 "use strict";
 delete Object.prototype; // Error! Cannot delete built-in objects
+
 4. Prevents Duplicating Function Parameters
 javascript
 CopyEdit
@@ -48,6 +51,7 @@ CopyEdit
 function sum(a, a) {  // Error! Duplicate parameter name
   return a + a;
 }
+
 5. Blocks this from Being undefined
 javascript
 CopyEdit
