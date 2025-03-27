@@ -68,7 +68,7 @@ function multiply(a, b) {
 }
 console.log(multiply(4, 5)); // Output: 20
 
-Key Takeaways
+Key Highlights
 Functions make code reusable and easy to manage.
 Use parameters to make functions more flexible.
 Use return to send back a result.
