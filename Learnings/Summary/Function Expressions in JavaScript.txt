@@ -1,4 +1,5 @@
 Function Expressions in JavaScript
+
 JavaScript provides two ways to define functions:
 1. Function Declarations = function myFunction() {}
 2. Function Expressions = let myFunction = function() {}
