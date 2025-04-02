@@ -1,0 +1,64 @@
+Function Expressions in JavaScript
+JavaScript provides two ways to define functions:
+1. Function Declarations = function myFunction() {}
+2. Function Expressions = let myFunction = function() {}
+Function expressions allow functions to be stored in variables, passed as arguments, and used flexibly.
+
+1. Function Expression Syntax
+Instead of giving a function a name, we assign it to a variable.
+let greet = function() {
+  console.log("Hello!");
+};
+
+greet(); // Output: Hello!
+ Here, greet holds an anonymous function (function() without a name).
+
+2. Named Function Expression (NFE)
+A function inside an expression can have a name.
+let greet = function sayHello() {
+  console.log("Hello!");
+};
+
+greet();   // Works: Output Hello!
+// sayHello();Error: Not accessible outside the function
+ The name sayHello is only accessible inside the function, not outside.
+
+3. Function Expressions vs. Declarations
+Example of hoisting:
+sayHi(); // Works
+
+function sayHi() {
+  console.log("Hello!");
+}
+Function declarations are hoisted, meaning they can be used before they are defined.
+But for function expressions, hoisting does not work:
+sayHi(); // Error
+
+let sayHi = function() {
+  console.log("Hello!");
+};
+Function expressions must be defined before use.
+
+4. When to Use Function Expressions?
+* Assign functions to variables (e.g., callbacks, event handlers).
+* Pass functions as arguments to other functions.
+* Store functions in objects.
+Example:
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you like JavaScript?",
+  function() { console.log("Yes!"); },
+  function() { console.log("No!"); }
+);
+Here, function expressions are passed as arguments to ask().
+
+Key Insights:
+* Function expressions are assigned to variables. 
+* They are not hoisted, unlike function declarations.
+* Can be anonymous or named.
+* Useful for callbacks, event handlers, and passing functions as arguments.
+

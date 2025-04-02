@@ -1,0 +1,64 @@
+JavaScript if...else
+1. if Statement
+Runs a block of code only if the condition is true.
+let age = 20;
+if (age >= 18) {
+  console.log("You can vote!");
+}
+ If age is 18 or more, it prints "You can vote!". Otherwise, it does nothing.
+
+2. if...else Statement
+Adds an alternative action if the condition is false.
+let age = 16;
+if (age >= 18) {
+  console.log("You can vote!");
+} else {
+  console.log("You cannot vote.");
+}
+ If age is less than 18, it prints "You cannot vote.".
+
+3. if...else if...else – Multiple Conditions
+Used when there are more than two possible conditions.
+javascript
+CopyEdit
+let score = 85;
+if (score >= 90) {
+  console.log("Grade: A");
+} else if (score >= 80) {
+  console.log("Grade: B");
+} else if (score >= 70) {
+  console.log("Grade: C");
+} else {
+  console.log("Grade: F");
+}
+ JavaScript checks each condition from top to bottom and runs the first match.
+
+4. Ternary Operator (? :)
+A shorter way to write if...else.
+javascript
+CopyEdit
+let age = 20;
+let message = age >= 18 ? "You can vote!" : "You cannot vote.";
+console.log(message);
+ If the condition is true, it returns "You can vote!", otherwise "You cannot vote.".
+
+5. Logical Operators in Conditions
+OperatorMeaningExampleResult&&AND (both true)age >= 18 && age <= 60true if age is between 18 and 60``OR (at least one true)!NOT (opposite)!isStudenttrue if is Student is falseExample:
+javascript
+CopyEdit
+let isSunny = true;
+let isWeekend = true;
+
+if (isSunny && isWeekend) {
+  console.log("Let's go for a picnic!");
+} else {
+  console.log("Stay at home.");
+}
+ The picnic happens only if both conditions are true.
+
+Key Insights:
+ Use if...else for decision-making in programs.
+ Use else if for multiple conditions.
+Use the ternary operator (? :) for shorter if...else statements.
+ Logical operators (&&, ||, !) help create complex conditions.
+

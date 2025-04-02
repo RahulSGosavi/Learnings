@@ -1,0 +1,51 @@
+Variables in JavaScript
+1. What is a Variable?
+A variable is a container for storing data. In JavaScript, we use let, const, or var to declare variables.
+For Example:
+let name = "Rahul";  
+console.log(name); // Output: Rahul
+
+2. Declaring Variables
+let:
+Preferred for most cases (allows changing values)
+const:
+For values that should not change
+
+
+var:
+Old way (avoid using it)
+Example:
+let age = 25;  // Can be changed later
+const birthYear = 1999;  // Cannot be changed
+var city = "Delhi";  // Avoid using `var`
+
+3. Changing Variable Values
+let mood = "happy";
+mood = "excited";  
+console.log(mood); // Output: excited
+const variables cannot be changed:
+const pi = 3.14;
+pi = 3.14159; // Error: Cannot reassign a constant variable
+
+4. Variable Naming Rules
+Allowed:
+* Letters (name)
+* Digits (name1)
+* $ and _ ($price, _value)
+Not Allowed:
+* Spaces (user name)
+* Special characters (#user, @age)
+* Starting with a number (1variable)
+ Example of valid names:
+let userName = "Rahul";  
+let _score = 100;  
+let $amount = 50;
+
+5. var vs. let vs. const
+Featurelet  constvar (Old)Can change value?Yes  No      YesNeeds to be declared before use? Yes Yes      NoUsed in modern JavaScript? Yes Yes     No
+Key Insights:
+Use let for variables that change.
+Use const for values that should stay the same.
+Avoid var because it has unexpected behavior.
+Follow proper naming rules for better readability.
+
