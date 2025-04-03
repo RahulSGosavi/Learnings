@@ -1,0 +1,57 @@
+Arrow Functions in JavaScript
+I understand Arrow functions are a shorter way to write functions in JavaScript. They use => instead of function.
+
+1. Basic Syntax
+let add = (a, b) => a + b;
+console.log(add(2, 3)); // 5
+If the function has one line, the result is returned automatically (no return needed).
+
+2. Single Parameter (No Parentheses Needed)
+javascript
+CopyEdit
+let square = x => x * x;
+console.log(square(4)); // 16
+ If there's only one parameter, you can skip () around it.
+
+3. No Parameters (Use Empty () or _)
+let sayHello = () => console.log("Hello!");
+sayHello(); // Output: Hello!
+ If there are no parameters, use ().
+
+4. Multi-line Arrow Functions (Use {} and return)
+let multiply = (a, b) => {
+  let result = a * b;
+  return result;
+};
+console.log(multiply(3, 4)); // 12
+ If the function has multiple lines, {} are needed, and you must use return.
+
+5. Arrow Functions and this
+* Arrow functions do not have their own this.
+* They take this from the surrounding code (lexical this).
+For Example:
+let user = {
+  name: "Rahul",
+  greet: function() {
+    setTimeout(() => {
+      console.log("Hello, " + this.name);
+    }, 1000);
+  }
+};
+
+user.greet(); // "Hello, Rahul"
+The arrow function inside setTimeout() takes this from greet().
+ If we used a normal function, this would be undefined or window!
+
+6. When to Use Arrow Functions?
+* Short functions
+* Callbacks (e.g., setTimeout, map, filter)
+*  Functions inside objects (to keep this)
+ Do NOT use them for methods inside objects or constructors because they don't have their own this.
+
+Key Insights
+* Arrow functions are shorter than regular functions.
+* They automatically return for one-liners.
+* They inherit this from the surrounding function.
+* Not suitable for methods in objects or constructors.
+
