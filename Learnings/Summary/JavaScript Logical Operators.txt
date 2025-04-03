@@ -1,0 +1,67 @@
+JavaScript Logical Operators
+I Understand Logical operators in JavaScript help combine and manipulate Boolean values (true / false).
+
+1. AND (&&) – Both must be true
+Returns true only if both conditions are true.
+console.log(true && true);   // true
+console.log(true && false);  // false
+console.log(false && true);  // false
+console.log(false && false); // false
+For Example: Check if a user can log in.
+let isLoggedIn = true;
+let isAdmin = true;
+
+if (isLoggedIn && isAdmin) {
+  console.log("Welcome, Admin!"); 
+}
+ The message appears only if both conditions are true.
+
+2. OR (||) – At least one must be true
+Returns true if at least one condition is true.
+javascript
+CopyEdit
+console.log(true || false);  // true
+console.log(false || true);  // true
+console.log(false || false); // false
+console.log(true || true);   // true
+For Example: Allow access if the user is logged in or a guest.
+let isLoggedIn = false;
+let isGuest = true;
+
+if (isLoggedIn || isGuest) {
+  console.log("Welcome!");
+}
+ The message appears if either isLoggedIn or isGuest is true.
+
+3. NOT (!) – Reverses true/false
+Turns true into false and vice versa.
+console.log(!true);  // false
+console.log(!false); // true
+For Example: Check if a user is not logged in.
+let isLoggedIn = false;
+
+if (!isLoggedIn) {
+  console.log("Please log in!");
+}
+The message appears because !false is true.
+
+4. Short-Circuiting
+Logical operators stop checking once they find the first true or false.
+console.log(0 || "Hello"); // "Hello" (stops at first truthy value)
+console.log(1 && "Hello"); // "Hello" (returns last value if all are true)
+console.log(null || undefined || "Text"); // "Text" (first truthy value)
+
+5. Double NOT (!!) – Convert to Boolean
+Using !! turns a value into true or false.
+console.log(!!1);  // true
+console.log(!!0);  // false
+console.log(!!"Hello"); // true
+console.log(!!""); // false
+
+Key Insights:
+* && (AND)  Both must be true
+* || (OR) At least one must be true
+*  ! (NOT) Reverses true/false
+* Short-circuiting stops checking once a result is clear
+* !!value converts to Boolean (true or false)
+
