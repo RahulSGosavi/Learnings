@@ -1,0 +1,38 @@
+What are Comments in JavaScript?
+Comments are parts of the code that are ignored by JavaScript.
+They help you or others understand the code later.
+ 1. Single-line Comment
+Use // for single-line notes.
+// This is a single-line comment
+let age = 25; // age of the user
+
+ 2. Multi-line Comment
+Use /* ... */ for comments that span multiple lines.
+/*
+  This is a multi-line comment.
+  You can write as much as you want here.
+*/
+let name = "Rahul";
+
+ 3. Using Comments to Disable Code
+You can comment out code to temporarily disable it without deleting:
+// alert("This won't run");
+alert("This will run");
+
+ When to Use Comments?
+* To explain what the code does
+* To make the code easier to read
+* To remind yourself or others why something was done
+* To turn off lines for testing/debugging
+
+ Avoid Obvious Comments:
+Don’t write comments that just repeat the code.
+// Set age to 25   unnecessary
+let age = 25;
+
+ Good Comment Example:
+// Check if the user is old enough to see the content
+if (age >= 18) {
+  showContent();
+}
+

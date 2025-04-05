@@ -1,0 +1,25 @@
+Interaction: alert, prompt, confirm
+1. alert() – Show a message
+* Displays a popup with a message and an OK button.
+* It pauses the script until the user clicks OK.
+alert("Hello, Rahul!");
+
+2. prompt() – Ask the user for input
+* Shows a popup with a text field, message, OK and Cancel buttons.
+* Returns:
+o The text the user typed (as a string)
+o Or null if Cancel is pressed.
+let name = prompt("What is your name?", "Rahul");
+alert("Hello, " + name);
+The second parameter is the default value (optional).
+
+ 3. confirm() – Ask Yes/No question
+* Shows a message with OK (Yes) and Cancel (No) buttons.
+* Returns:
+o true if OK is pressed
+o false if Cancel is pressed
+let isAdult = confirm("Are you 18 or older?");
+alert(isAdult); // true or false
+
+Key Insights:
+FunctionPurposeReturnsalert()Just shows a messageundefinedprompt()Gets user inputText or nullconfirm()Gets Yes/Notrue / false

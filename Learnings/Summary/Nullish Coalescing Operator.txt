@@ -1,0 +1,31 @@
+Nullish Coalescing Operator
+
+What is ???
+The nullish coalescing operator ?? returns the right-hand value if the left-hand value is null or undefined.
+let userName;
+alert(userName ?? "Guest"); // "Guest"
+ If userName is null or undefined, it returns "Guest".
+
+ Difference from || (OR)
+The || operator also returns the right-hand value if the left one is falsy, but falsy includes:
+false, 0, "", null, undefined, NaN
+let name = "";
+alert(name || "Guest");  // "Guest" (because "" is falsy)
+alert(name ?? "Guest");  // "" (because "" is NOT null or undefined)
+ ?? is safer when you want to allow values like "", 0, or false.
+
+ Use Case Example:
+let height = 0;
+
+console.log(height || 100); // 100 (because 0 is falsy)
+console.log(height ?? 100); // 0  (because 0 is not null or undefined)
+
+ Can't Use with ||, && Without ()
+This will cause an error:
+let x = 1 && 2 ?? 3; //  Syntax Error
+You must use parentheses:
+let x = (1 && 2) ?? 3; //  Works fine
+
+ Key Takeaways:
+OperatorChecks forReturns``??null or undefined      First defined valueUse ?? when you want to provide a default only if the value is really missing (null/undefined).
+

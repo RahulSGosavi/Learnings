@@ -1,0 +1,43 @@
+Debugging JavaScript in Chrome DevTools
+When your code doesn't work as expected, use DevTools in Chrome to debug.
+
+ 1. The debugger Statement
+You can pause the code by writing:
+debugger;
+When the browser hits it, execution stops, and you can inspect variables, the call stack, etc.
+
+ 2. Opening DevTools
+* Press F12 or Ctrl+Shift+I (Windows) / Cmd+Opt+I (Mac)
+* Go to the “Sources” tab to see the code and set breakpoints
+
+ 3. Breakpoints
+A breakpoint pauses the code at a specific line.
+How to set it:
+* Open the .js file in the Sources tab
+* Click on the line number to set a breakpoint
+* Refresh the page to trigger it
+
+ 4. Watching Values
+You can:
+* Hover over variables to see their values
+* Add variables to the "Watch" panel
+* See the Call Stack (what functions were called)
+* Check Scope (local, global variables)
+
+ 5. Step-by-Step Execution
+Use these buttons in DevTools:
+ButtonWhat it does ResumeContinue running Step OverRun next lineStep IntoGo inside a function Step OutFinish function and exit
+ 6. Pretty Print Minified Code
+If the code is all in one line, click {} (Pretty Print) to make it readable.
+
+ 7. Sources Panel Tips
+* You can edit code temporarily
+* Right-click lines to disable breakpoints
+* Check Local Storage, Cookies, etc. in Application tab
+
+ Key Insights:
+DevTools in Chrome is a powerful way to:
+* Pause your code
+* Inspect variables
+* Walk through execution
+* Fix bugs more efficiently

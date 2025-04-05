@@ -1,0 +1,73 @@
+"Specials" – Key Things to Know
+This article gives a quick overview of important core concepts in JavaScript that beginners often find confusing or forget.
+
+1. Case-sensitive Language
+JavaScript is case-sensitive:
+myVar, MyVar, and MYVAR are different variables.
+
+ 2. Statements and Semicolons
+* Each instruction is called a statement.
+* JavaScript auto-adds semicolons, but it's safer to write them yourself.
+let a = 5;
+let b = 10;
+
+3. Comments
+* Single-line: //
+* Multi-line: /* ... */
+// This is a comment
+/* This is 
+a multi-line comment */
+
+ 4. Use Strict Mode
+Helps catch errors and bad practices.
+javascript
+CopyEdit
+"use strict";
+Use at the top of your code or function.
+
+5. Variables: let, const, var
+* let block-scoped, can be reassigned
+* const block-scoped, cannot be reassigned
+* var function-scoped (old way)
+ Prefer let and const over var
+
+ 6. Data Types
+JavaScript has 8 basic types:
+TypeExampleNumber123, 3.14String"hello"Booleantrue, falseNullnullUndefinedundefinedObject{ name: "Rahul" }SymbolSymbol("id")BigInt12345678901234567890n
+ 7. Type Conversions
+JavaScript automatically converts types in some situations.
+Example:
+alert("5" - 1); // 4
+ "5" becomes number because - expects numbers.
+
+8. Operators
+Common ones:
+* +, -, *, /, % (modulo)
+* == (loose equality)
+* === (strict equality)
+* !, &&, ||
+
+ 9. Control Structures
+* if, else, switch
+* while, for
+* break, continue
+Example:
+
+if (age > 18) {
+  alert("Adult");
+}
+
+ 10. Functions
+Basic function:
+function greet(name) {
+  alert("Hello, " + name);
+}
+Can also be stored in variables (function expressions).
+
+ Quick Takeaway
+JavaScript has some unique behaviors and it's good to understand the "special" things like:
+* Auto type conversion
+* Strict mode
+* Case-sensitivity
+* Differences between let, var, const
+

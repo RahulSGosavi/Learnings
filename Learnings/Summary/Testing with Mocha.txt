@@ -1,0 +1,51 @@
+Testing with Mocha
+
+What is Mocha?
+Mocha is a popular JavaScript testing framework.
+It helps you automatically test your code to check if everything works as expected.
+
+1. Why Test?
+Manual testing is slow and error-prone.
+Mocha helps you write automated tests that run every time you change the code.
+
+2. Setting Up Mocha
+1. Install Node.js
+2. Run in terminal:
+npm install mocha -g
+3. Create an HTML file and include:
+<script src="https://unpkg.com/mocha/mocha.js"></script>
+<link href="https://unpkg.com/mocha/mocha.css" rel="stylesheet">
+<script src="https://unpkg.com/chai/chai.js"></script>
+4. Add this to start Mocha:
+<div id="mocha"></div>
+<script>mocha.setup('bdd')</script>
+5. Finally:
+mocha.run();
+
+ 3. Writing a Test
+Basic structure:
+describe("sum function", function() {
+  it("adds 1 + 2 = 3", function() {
+    assert.equal(sum(1, 2), 3);
+  });
+});
+ Breakdown:
+* describe() – groups tests
+* it() – describes a single test case
+* assert.equal() – checks if the result matches expectation
+
+ 4. Using Chai for Assertions
+Chai is used to write readable test expectations.
+
+assert.equal(actual, expected);
+
+5. Running Tests in Browser
+Open the HTML file with test code.
+You’ll see the Mocha UI in the browser showing pass/fail status for each test.
+
+Key Takeaways
+* Mocha helps you automate testing in JavaScript
+* Tests are grouped with describe() and run with it()
+* Use assert to compare actual results with expected ones
+* You can run tests easily in the browser or with Node.js
+
